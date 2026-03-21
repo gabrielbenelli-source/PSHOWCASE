@@ -5,11 +5,14 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
     "axios": "^1.13.6",
+    "canvas-confetti": "^1.9.4",
     "core-js": "^3.8.3",
     "element-plus": "^2.13.5",
     "roboto-fontface": "*",
@@ -34,6 +37,7 @@
     "eslint-plugin-cypress": "^6.2.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.0.3",
+    "gh-pages": "^6.3.0",
     "jsdom": "^29.0.0",
     "prettier": "^2.4.1",
     "sass": "^1.32.7",
